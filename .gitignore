@@ -1,0 +1,7 @@
+*.pyc
+__pycache__
+logs
+*.hdf5
+*.pkl
+*.pt
+*.swp

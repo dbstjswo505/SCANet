@@ -1,3 +1,3 @@
 python vid_query_set.py
 python make_data.py
-python normalize.py
+cp ./out_data/*.json ../../data/charades/

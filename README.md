@@ -1,23 +1,28 @@
-# Video-Scene-Complexity-Estimation
-[STARLAB] This repository is a system to estimate scene complexity in video
+# Scene Complexity Aware Network for Weakly-Supervised Video Moment Retrieval, ICCV'2023
+
 
 ## Compute Scene Complexity
 ```
+cd scene_complexity_estimation/charades_sta
 bash run.sh
 ```
 
-## Compute Scene Complexity Step-by-Step
-
-## Scene Finding
+## Environment
+python 3.7.6
+CUDA 11.5 - 12.4
 ```
-python vid_query_set.py
+pip install -r requirements.txt
 ```
 
-## Scene Redundancy Removal
+## training
+```
+python train.py
+```
+
+## inference
 
 ```
-python make_data.py
-python normalize.py
+python train.py --eval --resume ./checkpoints/charades/model-best.pt
 ```
 
 

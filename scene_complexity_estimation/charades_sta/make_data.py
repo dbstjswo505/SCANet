@@ -12,7 +12,7 @@ for i in range(len(src)):
     complexity = len(data[vid])
     src[i].append(complexity)
 
-with open('./raw/test_data_redundancy.json', 'w') as go:
+with open('./out_data/test_data_complexity.json', 'w') as go:
     json.dump(src, go)
 
 
@@ -27,7 +27,7 @@ for i in range(len(src)):
     complexity = len(data[vid])
     src[i].append(complexity)
 
-with open('./raw/train_data_redundancy.json', 'w') as go:
+with open('./out_data/train_data_complexity.json', 'w') as go:
     json.dump(src, go)
 
 # pdb.set_trace()
